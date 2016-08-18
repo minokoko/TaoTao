@@ -8272,3 +8272,28 @@ Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进
 	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
 	... 7 more
+
+!ENTRY org.eclipse.egit.core 4 0 2016-08-18 21:04:34.774
+!MESSAGE An exception occurred during push on URI ssh://git@github.com/minokoko/TaoTao.git: ssh://git@github.com/minokoko/TaoTao.git: channel is not opened.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: ssh://git@github.com/minokoko/TaoTao.git: channel is not opened.
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:164)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:228)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: ssh://git@github.com/minokoko/TaoTao.git: channel is not opened.
+	at org.eclipse.jgit.transport.JschSession$JschProcess.<init>(JschSession.java:156)
+	at org.eclipse.jgit.transport.JschSession$JschProcess.<init>(JschSession.java:119)
+	at org.eclipse.jgit.transport.JschSession.exec(JschSession.java:92)
+	at org.eclipse.jgit.transport.TransportGitSsh$SshPushConnection.<init>(TransportGitSsh.java:320)
+	at org.eclipse.jgit.transport.TransportGitSsh.openPush(TransportGitSsh.java:166)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:154)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1200)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:157)
+	... 4 more
+Caused by: com.jcraft.jsch.JSchException: channel is not opened.
+	at com.jcraft.jsch.Channel.sendChannelOpen(Channel.java:765)
+	at com.jcraft.jsch.Channel.connect(Channel.java:151)
+	at org.eclipse.jgit.transport.JschSession$JschProcess.<init>(JschSession.java:151)
+	... 11 more
