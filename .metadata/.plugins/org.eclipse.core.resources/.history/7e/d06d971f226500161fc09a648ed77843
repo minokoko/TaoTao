@@ -1,0 +1,9 @@
+package com.taotao.controller;
+/**
+ * 商品查询Controller
+ * @author jessyon
+ *
+ */
+public class ItemController {
+
+}

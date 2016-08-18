@@ -1,0 +1,18 @@
+package com.taotao.service.impl;
+
+import com.taotao.pojo.TbItem;
+import com.taotao.service.ItemService;
+/**
+ * 根据Item的ID查询Item
+ * @author jessyon
+ *
+ */
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(Long itemId) {
+		
+		return null;
+	}
+
+}
