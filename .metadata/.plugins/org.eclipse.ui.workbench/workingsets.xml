@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.mylyn.tasks.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1471487814717_1" label="TaoTao" name="TaoTao">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-pojo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-common" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-dao" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-web" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1471486173604_0" label="Window Working Set" name="Aggregate for window 1471486173603"/>
+<mruList name="TaoTao"/>
+</workingSetManager>
