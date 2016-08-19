@@ -1,0 +1,15 @@
+package com.taotao.controller;
+/**
+ * 页面跳转Controller
+ * @author jessyon
+ *
+ */
+
+public class PageController {
+
+	@RequestMapping("/")
+	public String showIndex(){
+		
+	}
+	
+}

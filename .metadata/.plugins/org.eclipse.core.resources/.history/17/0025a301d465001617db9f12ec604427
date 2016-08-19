@@ -1,0 +1,23 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.mapper.TbItemCatMapper;
+import com.taotao.service.ItemCatService;
+
+public class ItemCatServiceImpl implements ItemCatService {
+
+	@Autowired
+	private TbItemCatMapper tbItemCatMapper;
+	
+	@Override
+	public List<EasyUITreeNode> getItemCatList(Long parentId) {
+		//根据parentId查询分类列表
+		
+		return null;
+	}
+
+}

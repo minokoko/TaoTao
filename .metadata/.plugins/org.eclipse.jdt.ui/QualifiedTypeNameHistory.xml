@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItem"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItemExample"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbContentCategoryExample.Criteria"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbContentExample.Criteria"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItemExample.Criteria"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.taotao.common.pojo.EasyUIDataGridResult"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
+<fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
+<fullyQualifiedTypeName name="com.taotao.service.ItemService"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItemCatExample"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItemCatExample.Criteria"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.taotao.pojo.TbItemCat"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+</qualifiedTypeNameHistroy>

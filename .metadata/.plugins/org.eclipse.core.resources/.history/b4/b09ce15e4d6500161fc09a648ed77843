@@ -1,0 +1,10 @@
+package com.taotao.controller;
+/**
+ * 页面Controller
+ * @author jessyon
+ *
+ */
+
+public class PageController {
+
+}

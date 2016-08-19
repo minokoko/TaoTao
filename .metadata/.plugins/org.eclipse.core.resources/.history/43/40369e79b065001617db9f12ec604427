@@ -1,0 +1,10 @@
+package com.taotao.common.pojo;
+
+import java.util.List;
+
+class EasyUIDataGridResult {
+
+	private long total;
+	private List<?> rows;
+	
+}
