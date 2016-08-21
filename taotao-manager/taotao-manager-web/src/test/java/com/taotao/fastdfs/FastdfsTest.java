@@ -35,4 +35,11 @@ public class FastdfsTest {
 		
 	}
 	
+	@Test
+	public void testFastdfsClient() throws Exception{
+		FastDFSClient client = new FastDFSClient("C:\\Users\\jessyon\\TaoTao\\taotao-manager\\taotao-manager-web\\src\\main\\resources\\properties\\fdfs_client.conf");
+		String uploadFile = client.uploadFile("C:\\Users\\Public\\Pictures\\Sample Pictures\\abcd.jpg", "jpg", null);
+		System.out.println(uploadFile);
+	}
+	
 }

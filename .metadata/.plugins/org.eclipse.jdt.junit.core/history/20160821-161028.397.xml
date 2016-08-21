@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FastdfsTest.testUpload" project="taotao-manager-web" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testUpload" classname="com.taotao.fastdfs.FastdfsTest" time="0.032"/>
+</testrun>

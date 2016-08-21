@@ -8438,3 +8438,9 @@ Caused by: java.io.IOException: 另一个程序已锁定文件的一部分，进
 	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:396)
 	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:223)
 	... 7 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-08-21 18:46:01.121
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-08-21 18:46:21.858
+!MESSAGE The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
