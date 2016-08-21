@@ -1,0 +1,9 @@
+package com.taotao.fastdfs;
+
+public class FastdfsTest {
+
+	public void testUpload(){
+		
+	}
+	
+}

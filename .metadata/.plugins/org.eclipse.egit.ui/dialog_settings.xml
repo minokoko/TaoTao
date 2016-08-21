@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="&lt;context:component-scan"/>
+	</list>
 	<list key="CommitDialog.authorValues">
 		<item value="jessyon &lt;349283474@qq.com&gt;"/>
 	</list>

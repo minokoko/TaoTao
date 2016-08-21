@@ -10,6 +10,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-dao" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/generatorSqlmapCustom" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/fastdfs_client" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1471486173604_0" label="Window Working Set" name="Aggregate for window 1471486173603"/>
 <mruList name="TaoTao"/>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItem"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemExample"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbContentCategoryExample.Criteria"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbContentExample.Criteria"/>
@@ -18,4 +17,5 @@
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemCat"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 </qualifiedTypeNameHistroy>
