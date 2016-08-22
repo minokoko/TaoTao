@@ -11,6 +11,8 @@ import org.csource.fastdfs.TrackerClient;
 import org.csource.fastdfs.TrackerServer;
 import org.junit.Test;
 
+import com.taotao.common.utils.FastDFSClient;
+
 public class FastdfsTest {
 
 	/*1、把FastDFS提供的jar包添加到工程中
@@ -35,11 +37,6 @@ public class FastdfsTest {
 		
 	}
 	
-	@Test
-	public void testFastdfsClient() throws Exception{
-		FastDFSClient client = new FastDFSClient("C:\\Users\\jessyon\\TaoTao\\taotao-manager\\taotao-manager-web\\src\\main\\resources\\properties\\fdfs_client.conf");
-		String uploadFile = client.uploadFile("C:\\Users\\Public\\Pictures\\Sample Pictures\\abcd.jpg", "jpg", null);
-		System.out.println(uploadFile);
-	}
+
 	
 }

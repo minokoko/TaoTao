@@ -1,4 +1,4 @@
-!SESSION 2016-08-19 08:52:24.989 -----------------------------------------------
+!SESSION 2016-08-22 08:07:20.485 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_60
 java.vendor=Oracle Corporation
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file C:\Users\jessyon\TaoTao\.metadata\.bak_0.log
-Created Time: 2016-08-19 14:41:05.415
+Created Time: 2016-08-22 08:44:24.103
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.416
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.103
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -266,11 +266,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -289,7 +289,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.417
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.107
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -558,11 +558,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -581,7 +581,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.418
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.110
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -862,11 +862,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -885,7 +885,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.420
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.112
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1178,11 +1178,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -1201,7 +1201,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.421
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.115
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1506,11 +1506,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -1529,7 +1529,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.423
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.117
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -1846,11 +1846,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -1869,7 +1869,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.424
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.120
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2198,11 +2198,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -2221,7 +2221,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.425
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.123
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2562,11 +2562,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -2585,7 +2585,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.427
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.143
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -2938,11 +2938,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -2961,7 +2961,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.428
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.146
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3326,11 +3326,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -3349,7 +3349,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.430
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.150
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -3726,11 +3726,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -3749,7 +3749,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.431
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.154
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4138,11 +4138,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -4161,7 +4161,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.433
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.158
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4562,11 +4562,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -4585,7 +4585,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.434
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.162
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -4998,11 +4998,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -5021,7 +5021,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.436
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.165
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5446,11 +5446,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -5469,7 +5469,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.438
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.169
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -5906,11 +5906,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -5929,7 +5929,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.439
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.172
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6378,11 +6378,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -6401,7 +6401,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.441
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.176
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -6862,11 +6862,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -6885,7 +6885,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.442
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.179
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7358,11 +7358,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -7381,7 +7381,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.444
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.182
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -7866,11 +7866,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -7889,7 +7889,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.446
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.187
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8386,11 +8386,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -8409,7 +8409,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.448
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.191
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -8918,11 +8918,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -8941,7 +8941,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.449
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.195
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -9462,11 +9462,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -9485,7 +9485,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.451
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.198
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10018,11 +10018,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -10041,7 +10041,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.452
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.202
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -10586,11 +10586,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -10609,7 +10609,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.454
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.206
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -11166,11 +11166,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -11189,7 +11189,7 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Unknown Source)
 
-!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-19 14:41:05.456
+!ENTRY org.eclipse.epp.logging.aeri.core 2 1 2016-08-22 08:44:24.210
 !MESSAGE AERI failed with an error. Please report this error: null ; version: 1.100.0.v20160211-1103
 !STACK 0
 java.lang.NullPointerException
@@ -11758,11 +11758,11 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceFactory.log(ExtendedLogServiceFactory.java:65)
 	at org.eclipse.osgi.internal.log.ExtendedLogServiceImpl.log(ExtendedLogServiceImpl.java:87)
 	at org.eclipse.osgi.internal.log.LoggerImpl.log(LoggerImpl.java:54)
-	at org.eclipse.core.internal.runtime.PlatformLogWriter.logging(PlatformLogWriter.java:44)
-	at org.eclipse.core.internal.runtime.RuntimeLog.log(RuntimeLog.java:97)
-	at org.eclipse.core.internal.jobs.JobManager.doShutdown(JobManager.java:652)
-	at org.eclipse.core.internal.jobs.JobManager.shutdown(JobManager.java:277)
-	at org.eclipse.core.internal.jobs.JobActivator.stop(JobActivator.java:57)
+	at org.eclipse.core.internal.runtime.Log.log(Log.java:65)
+	at org.eclipse.core.internal.utils.Policy.log(Policy.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.reportSnapshotRequestor(SaveManager.java:655)
+	at org.eclipse.core.internal.resources.Workspace.close(Workspace.java:576)
+	at org.eclipse.core.resources.ResourcesPlugin.stop(ResourcesPlugin.java:433)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
 	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
 	at java.security.AccessController.doPrivileged(Native Method)
