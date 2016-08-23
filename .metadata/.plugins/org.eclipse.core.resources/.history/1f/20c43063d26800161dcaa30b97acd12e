@@ -1,0 +1,24 @@
+package com.taotao.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.service.ItemParamService;
+
+/**
+ * 商品规格参数模板service
+ * @author jessyon
+ *
+ */
+@Service
+public class ItemParamServiceImpl implements ItemParamService {
+
+	@Autowired
+	private TbItemParamMapper itemParamMapper;
+	@Override
+	public TaotaoResult getItemParamByCid(Long cid) {
+		
+		return null;
+	}
+
+}
