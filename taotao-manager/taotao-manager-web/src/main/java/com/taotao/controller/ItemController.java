@@ -2,6 +2,7 @@ package com.taotao.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -33,6 +34,13 @@ public class ItemController {
 	@ResponseBody
 	public TaotaoResult createItem(TbItem item,String desc,String itemParams){
 		return itemService.createItem(item, desc,itemParams);
+	}
+	
+	@RequestMapping("/page/item/{itemId}")
+	public String showItemParam(@PathVariable Long itemId,Model model){
+		String myhtml = itemService.getItemParamHtml(itemId);
+		model.addAttribute("myhtml",myhtml);
+		return "itemparam";
 	}
 	
 }
