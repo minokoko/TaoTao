@@ -7,6 +7,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="taotao-rest"/>
 			<item value="taotao-manager"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -57,10 +58,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.taotao"/>
 		</list>
 		<list key="groupId">
-			<item value="com.taotao"/>
 		</list>
 		<list key="artifactId">
 		</list>
@@ -74,6 +73,19 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\jessyon\TaoTao"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>
