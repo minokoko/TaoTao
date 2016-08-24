@@ -1,0 +1,14 @@
+package com.taotao.portal.controller;
+/**
+ * 访问首页controller
+ * @author jessyon
+ *
+ */
+@Controller
+public class IndexController {
+
+	@RequestMapping("/index")
+	public String showIndex(){
+		return "";
+	}
+}

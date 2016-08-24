@@ -24,6 +24,8 @@
 		<module>taotao-manager-service</module>
 		<module>taotao-manager-web</module>
 	</modules>
+	
+	<!-- 添加tomcat插件 -->
 	<build>
 		<plugins>
 			<plugin>
