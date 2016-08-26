@@ -1,7 +1,0 @@
-package com.taotao.service;
-
-public interface ItemService {
-
-	public TbItem getItemById(Long itemId);
-	
-}

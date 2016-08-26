@@ -1,4 +1,0 @@
-jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=jdbc:mysql://localhost:3306/taotao?characterEncoding=utf-8
-jdbc.username=w6233834
-jdbc.password=6233834
