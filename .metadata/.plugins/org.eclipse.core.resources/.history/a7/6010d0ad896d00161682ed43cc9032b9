@@ -1,0 +1,30 @@
+package com.taotao.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.mapper.TbContentCategoryMapper;
+import com.taotao.service.ContentCategoryService;
+
+/**
+ * 内容管理Service
+ * 
+ * @author jessyon
+ *
+ */
+@Service
+public class ContentCategoryServiceImpl implements ContentCategoryService {
+
+	@Autowired
+	private TbContentCategoryMapper contentCategoryMapper;
+
+	@Override
+	public List<EasyUITreeNode> getContentList(Long parentId) {
+
+		return null;
+	}
+
+}

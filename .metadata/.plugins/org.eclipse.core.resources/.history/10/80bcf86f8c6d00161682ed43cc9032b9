@@ -1,0 +1,19 @@
+package com.taotao.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.taotao.service.ContentCategoryService;
+
+/**
+ * 内容列表Controller 
+ * @author jessyon
+ *
+ */
+@Controller
+public class ContentCategoryController {
+
+	@Autowired
+	private ContentCategoryService contentCategoryService;
+	
+}

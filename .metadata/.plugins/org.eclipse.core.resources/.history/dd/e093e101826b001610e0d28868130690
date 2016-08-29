@@ -1,0 +1,27 @@
+package com.taotao.rest.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.mapper.TbItemCatMapper;
+import com.taotao.rest.pojo.ItemCatResult;
+import com.taotao.rest.service.ItemCatService;
+
+/**
+ * 商品分类列表查询
+ * @author jessyon
+ *
+ */
+@Service
+public class ItemCatServiceImpl implements ItemCatService {
+
+	@Autowired
+	private TbItemCatMapper itemCatMapper;
+	
+	@Override
+	public ItemCatResult getItemCatList() {
+		
+		return null;
+	}
+
+}

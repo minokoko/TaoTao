@@ -1,0 +1,13 @@
+package com.taotao.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.taotao.service.ContentCategoryService;
+
+@Controller
+public class ContentCategoryController {
+
+	@Autowired
+	private ContentCategoryService contentCategoryService;
+	
+}

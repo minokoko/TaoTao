@@ -1,0 +1,7 @@
+package com.taotao.rest.service;
+
+public class ItemCatService {
+
+	public ItemCatRsult getItemCatList();
+	
+}
