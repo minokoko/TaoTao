@@ -104,7 +104,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 	 * 根据Id删除，包括级联删除
 	 */
 	@Override
-	public void deleteById(Long parentId,Long id) {
+	public void deleteById(Long parentId, Long id) {
 
 		// 根据id查询要删除的node
 		TbContentCategory node = contentCategoryMapper.selectByPrimaryKey(id);
@@ -113,7 +113,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		Boolean isParent = node.getIsParent();
 
 		// 保存父节点的ID
-		//如果是第一次调用，参数中的parentId为空，需要将parentId查询出来，从第二次开始，这里的parentId与参数中的一样
+		// 如果是第一次调用，参数中的parentId为空，需要将parentId查询出来，从第二次开始，这里的parentId与参数中的一样
 		parentId = node.getParentId();
 
 		// 根据node的parentId找到父节点
@@ -140,23 +140,23 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 				parentNode.setIsParent(false);
 				contentCategoryMapper.updateByPrimaryKey(parentNode);
 			}
-		}else{
-			//不是叶子节点，而是一个有子节点的根节点,要使用递归删除
-			//根据parentId查询所有子节点，先删除子节点，再删除自己
+		} else {
+			// 不是叶子节点，而是一个有子节点的根节点,要使用递归删除
+			// 根据parentId查询所有子节点，先删除子节点，再删除自己
 			TbContentCategoryExample example = new TbContentCategoryExample();
 			Criteria criteria = example.createCriteria();
 
 			// 查询条件为parentId
 			criteria.andParentIdEqualTo(id);
-			
+
 			// 执行查询
 			List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
-			
-			//先把自己的所有子节点删除
+
+			// 先把自己的所有子节点删除
 			for (TbContentCategory tbContentCategory : list) {
-				deleteById(id,tbContentCategory.getId());
+				deleteById(id, tbContentCategory.getId());
 			}
-			//删除自己
+			// 删除自己
 			contentCategoryMapper.deleteByPrimaryKey(id);
 		}
 

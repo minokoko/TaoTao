@@ -1,0 +1,14 @@
+package com.taotao.service.impl;
+
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.service.ContentService;
+
+public class ContentServiceImpl implements ContentService {
+
+	@Override
+	public EasyUIDataGridResult getItemList(int page, int rows) {
+		
+		return null;
+	}
+
+}

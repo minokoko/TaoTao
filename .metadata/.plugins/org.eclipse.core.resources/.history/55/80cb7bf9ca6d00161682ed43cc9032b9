@@ -1,0 +1,17 @@
+package com.taotao.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.taotao.common.pojo.EasyUIDataGridResult;
+
+@Controller
+public class ContentController {
+
+	@RequestMapping("/content/query/list")
+	@ResponseBody
+	 public EasyUIDataGridResult getContentListById(Integer page,Integer rows,@RequestParam Long categoryId){
+		return itemService.getContentListById(page, rows,categoryId);
+	}
+	
+}
