@@ -23,6 +23,10 @@
 			<item value="400"/>
 		</list>
 	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="729" key="DIALOG_X_ORIGIN"/>
+		<item value="345" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
 		<item value="1015" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>

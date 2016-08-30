@@ -1,7 +1,0 @@
-package com.taotao.service;
-
-public interface ItemParamService {
-
-	public TaotaoResult getItemParamByCid(Long cid);
-	
-}

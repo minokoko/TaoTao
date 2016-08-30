@@ -1,7 +1,0 @@
-package com.taotao.service;
-
-public interface ItemCatService {
-
-	List<EazyUITreeNode> getItemCatList(Long parentId);
-	
-}
