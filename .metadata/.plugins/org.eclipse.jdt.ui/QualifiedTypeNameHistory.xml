@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItem"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemExample.Criteria"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="com.taotao.common.pojo.EasyUIDataGridResult"/>
 <fullyQualifiedTypeName name="com.github.pagehelper.PageHelper"/>
 <fullyQualifiedTypeName name="com.github.pagehelper.PageInfo"/>
@@ -10,7 +9,6 @@
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemCatExample"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemCatExample.Criteria"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemCat"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.taotao.utils.FastDFSClient"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
 <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
@@ -23,7 +21,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="com.taotao.common.pojo.EasyUITreeNode"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbContentCategory"/>
-<fullyQualifiedTypeName name="com.taotao.common.pojo.TaotaoResult"/>
 <fullyQualifiedTypeName name="com.taotao.mapper.TbContentMapper"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.taotao.pojo.TbItemExample"/>
@@ -48,4 +45,14 @@
 <fullyQualifiedTypeName name="org.apache.http.client.entity.UrlEncodedFormEntity"/>
 <fullyQualifiedTypeName name="org.apache.http.entity.StringEntity"/>
 <fullyQualifiedTypeName name="org.apache.http.util.EntityUtils"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.taotao.rest.component.JedisClient"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+<fullyQualifiedTypeName name="com.taotao.common.utils.JsonUtils"/>
+<fullyQualifiedTypeName name="com.taotao.common.pojo.TaotaoResult"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.taotao.common.utils.HttpClientUtil"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 </qualifiedTypeNameHistroy>

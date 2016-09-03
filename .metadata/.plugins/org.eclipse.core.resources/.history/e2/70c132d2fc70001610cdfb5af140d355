@@ -1,0 +1,5 @@
+package com.taotao.rest.component;
+
+public class JedisClient {
+
+}

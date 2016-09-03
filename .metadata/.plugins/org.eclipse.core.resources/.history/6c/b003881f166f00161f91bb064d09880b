@@ -1,0 +1,16 @@
+package com.taotao.rest.service.impl;
+
+import java.util.List;
+
+import com.taotao.pojo.TbContent;
+import com.taotao.rest.service.ContentService;
+
+public class ContentServiceImpl implements ContentService {
+
+	@Override
+	public List<TbContent> getContentList(Long cid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

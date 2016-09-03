@@ -1,0 +1,45 @@
+package com.taotao.rest.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.mapper.TbContentMapper;
+import com.taotao.pojo.TbContent;
+import com.taotao.pojo.TbContentExample;
+import com.taotao.pojo.TbContentExample.Criteria;
+import com.taotao.rest.service.ContentService;
+
+/**
+ * 内容查询服务service 
+ * @author jessyon
+ *
+ */
+@Service
+public class ContentServiceImpl implements ContentService {
+
+	@Autowired
+	private TbContentMapper contentMapper;
+	
+	/**
+	 * 根据cid查询内容列表
+	 */
+	@Override
+	public List<TbContent> getContentList(Long cid) {
+		//添加缓存
+		//查询数据库之前，查询缓存
+		
+		
+		
+		TbContentExample example = new TbContentExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(cid);
+		
+		
+		//执行查询并返回
+		
+		return contentMapper.selectByExampleWithBLOBs(example);
+	}
+
+}

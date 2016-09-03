@@ -1,0 +1,36 @@
+package com.taotao.test;
+
+import org.junit.Test;
+
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
+
+public class JedisTest {
+
+	//单机版测试
+	@Test
+	public void testJedisSingle() throws Exception{
+		//创建一个Jedis对象
+		Jedis jedis = new Jedis("192.168.233.131",6379);
+		jedis.set("test", "hello jedis");
+		String string = jedis.get("test");
+		System.out.println(string);
+		jedis.close();
+	}
+	
+	//使用连接池
+	@Test
+	public void testJedisPool() throws Exception{
+		JedisPool jedisPool = new JedisPool("192.168.233.131",6379);
+		Jedis jedis = jedisPool.getResource();
+		
+		jedis.set("test2", "hello jedis");
+		String string = jedis.get("test2");
+		System.out.println(string);
+		jedis.close();
+		
+		
+		//系统关闭时，关闭连接池
+	}
+	
+}

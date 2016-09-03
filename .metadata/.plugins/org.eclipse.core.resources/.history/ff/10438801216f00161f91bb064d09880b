@@ -1,0 +1,35 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.portal.service.ContentService;
+
+/**
+ * 获得内容管理Service
+ * @author jessyon
+ *
+ */
+@Service
+public class ContentServiceImpl implements ContentService {
+
+	@Value("${REST_BASE_URL}")
+    private String REST_BASE_URL;
+	@Value("${REST_CONTENT_URL}")
+	private String REST_CONTENT_URL;
+	@Value("${REST_CONTENT_AD1_CID}")
+	private String REST_CONTENT_AD1_CID;
+	
+	/**
+	 * 获得大广告位的内容
+	 */
+	@Override
+	public String getAd1List() {
+		//调用服务获得数据
+		Strintg url = REST_BASE_URL+REST_CONTENT_URL+REST_CONTENT_AD1_CID;
+		HttpClientUtil.doGet("");
+		return null;
+	}
+
+}

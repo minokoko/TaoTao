@@ -1,9 +1,0 @@
-package com.taotao.portal.controller;
-/**
- * 访问首页controller
- * @author jessyon
- *
- */
-public class IndexController {
-
-}

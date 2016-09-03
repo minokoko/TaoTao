@@ -1,0 +1,8 @@
+package com.taotao.portal.pojo;
+
+public class AdNode {
+
+	private int height;
+	private int width;
+	
+}

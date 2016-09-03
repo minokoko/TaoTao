@@ -1,0 +1,7 @@
+package com.taotao.rest.service;
+
+public interface ContentService {
+
+	public List<TbContent> getContentList(Long cid);
+	
+}
