@@ -1,4 +1,0 @@
-#服务层基础url
-REST_BASE_URL=http://localhost:8081/rest
-#内容查询url
-/content/89

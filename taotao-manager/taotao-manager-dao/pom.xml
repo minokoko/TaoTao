@@ -42,6 +42,7 @@
 			<artifactId>druid</artifactId>
 		</dependency>
 	</dependencies>
+	<!-- 如果不添加次节点，mybatis的mapper.xml文件都不会被扫描 -->
 	<build>
 		<resources>
 			<resource>

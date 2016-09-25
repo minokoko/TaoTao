@@ -36,6 +36,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="F:\GitHub\AccountManage"/>
 			<item value="C:\Users\jessyon\TaoTao\taotao-portal"/>
 		</list>
 		<list key="projectNameTemplate">

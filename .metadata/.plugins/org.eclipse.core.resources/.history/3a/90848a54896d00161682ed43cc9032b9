@@ -1,7 +1,0 @@
-package com.taotao.service;
-
-public interface ContentCategoryService {
-
-	public List<EasyUITreeNode> getContentList(Long parentId);
-	
-}
