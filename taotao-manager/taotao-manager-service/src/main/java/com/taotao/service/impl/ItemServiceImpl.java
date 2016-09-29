@@ -107,13 +107,44 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
+	public TaotaoResult updateItem(TbItem item, String desc, String itemParam) {
+
+		Date date = new Date();
+		item.setCreated(date);
+		item.setUpdated(date);
+		item.setStatus((byte) 1);
+		
+		itemMapper.updateByPrimaryKeySelective(item);
+
+		TbItemDesc itemDesc = new TbItemDesc();
+		itemDesc.setItemId(item.getId());
+		itemDesc.setItemDesc(desc);
+		itemDesc.setCreated(date);
+		itemDesc.setUpdated(date);
+
+		// 添加商品规格参数,插入到tb_item_param_item表中
+		TbItemParamItem itemParamItem = new TbItemParamItem();
+		itemParamItem.setItemId(item.getId());
+		itemParamItem.setParamData(itemParam);
+		itemParamItem.setCreated(date);
+		itemParamItem.setUpdated(date);
+
+		// 插入商品描述数据
+		itemDescMapper.updateByPrimaryKeyWithBLOBs(itemDesc);
+		itemParamItemMapper.updateByPrimaryKeyWithBLOBs(itemParamItem);
+
+		return TaotaoResult.ok();
+	}
+
+	@Override
 	public String getItemParamHtml(Long itemId) {
 		// 根据商品id查询规格参数
 		TbItemParamItemExample example = new TbItemParamItemExample();
 		com.taotao.pojo.TbItemParamItemExample.Criteria criteria = example.createCriteria();
 		criteria.andItemIdEqualTo(itemId);
 		// 执行查询,务必使用WithBLOBs
-		//List<TbItemParamItem> list = itemParamItemMapper.selectByExample(example);
+		// List<TbItemParamItem> list =
+		// itemParamItemMapper.selectByExample(example);
 		List<TbItemParamItem> list = itemParamItemMapper.selectByExampleWithBLOBs(example);
 		if (list == null || list.isEmpty()) {
 			return "";
@@ -126,7 +157,7 @@ public class ItemServiceImpl implements ItemService {
 		List<Map> mapList = JsonUtils.jsonToList(paramData, Map.class);
 		// 遍历list，生成html
 		StringBuffer sb = new StringBuffer();
-		
+
 		sb.append("<table cellpadding=\"0\" cellspacing=\"1\" width=\"100%\" border=\"1\" class=\"Ptable\">\n");
 		sb.append("	<tbody>\n");
 		for (Map map : mapList) {

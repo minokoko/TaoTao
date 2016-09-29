@@ -7,5 +7,6 @@ import com.taotao.search.pojo.SearchItem;
 public interface ItemMapper {
 
 	public List<SearchItem> getItemList();
+	public SearchItem getItemById(Long id);
 	
 }

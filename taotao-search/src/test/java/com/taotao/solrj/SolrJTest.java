@@ -2,6 +2,7 @@ package com.taotao.solrj;
 
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.impl.CloudSolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
@@ -46,6 +47,25 @@ public class SolrJTest {
 		}
 	}
 
+	@Test
+	public void testSolrCloud() throws Exception {
+		//创建一个SolrServer对象
+		CloudSolrServer solrServer = new CloudSolrServer("115.159.93.201:2181,115.159.93.201:2182,115.159.93.201:2183");
+		//设置默认的collection
+		solrServer.setDefaultCollection("collection2");
+		
+		//创建一个文档对象
+		SolrInputDocument document = new SolrInputDocument();
+		document.addField("id", "test01");
+		document.addField("item_title", "jessyon");
+		
+		//添加文档
+		solrServer.add(document);
+		
+		//提交
+		solrServer.commit();
+		
+	}
 
 	
 }

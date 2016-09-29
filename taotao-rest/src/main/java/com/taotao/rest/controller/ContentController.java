@@ -38,17 +38,5 @@ public class ContentController {
 		
 	}
 	
-	//缓存同步，将redis中的数据删除
-	@RequestMapping("/sync/content/{cid}")
-	@ResponseBody
-	public TaotaoResult sysncContent(@PathVariable Long cid){
-		try {
-			TaotaoResult reuslt = contentService.syncContent(cid);
-			return reuslt;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
-		}
-	}
 	
 }

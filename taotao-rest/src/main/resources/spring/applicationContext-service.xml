@@ -63,4 +63,10 @@
 	</bean>
 
 	<bean id="jedisClientCluster" class="com.taotao.rest.component.impl.JedisClientCluster"></bean> -->
+	
+	<!-- 配置集群版solr客户端 -->
+	<bean id="cloudSolrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+		<constructor-arg name="zkHost" value="115.159.93.201:2181,115.159.93.201:2182,115.159.93.201:2183"></constructor-arg>
+		<property name="defaultCollection" value="collection2"></property>
+	</bean>
 </beans>

@@ -81,7 +81,7 @@ public class ContentServiceImpl implements ContentService {
 		jedisClient.hdel(REDIS_CONTENT_KEY, cid+"");
 		return TaotaoResult.ok();
 	}
-	
+
 	
 
 }
