@@ -1,0 +1,95 @@
+package com.taotao.rest.service.impl;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.utils.JsonUtils;
+import com.taotao.mapper.TbItemDescMapper;
+import com.taotao.mapper.TbItemMapper;
+import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemDesc;
+import com.taotao.rest.component.JedisClient;
+import com.taotao.rest.service.ItemService;
+
+/**
+ * 商品管理Service
+ * @author jessyon
+ *
+ */
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	private TbItemMapper itemMapper;
+	
+	@Autowired
+	private TbItemDescMapper itemDescMapper;
+	
+	@Autowired
+	private JedisClient jedisClient;
+	
+	@Value("${REDIS_ITEM_KEY}")
+	private String REDIS_ITEM_KEY;
+	
+	@Value("${ITEM_BASE_INFO_KEY}")
+	private String ITEM_BASE_INFO_KEY;
+	
+	@Value("${ITEM_EXPIRE_SECOND}")
+	private Integer ITEM_EXPIRE_SECOND;
+
+	@Value("${ITEM_DESC_KEY}")
+	private String ITEM_DESC_KEY;
+	
+	@Override
+	public TbItem getItemById(Long itemId) {
+		//查询缓存，如果有，直接返回
+		try {
+			
+			String json = jedisClient.get(REDIS_ITEM_KEY+":"+ITEM_BASE_INFO_KEY+":"+itemId);
+			
+			//判断数据是否存在
+			if(StringUtils.isNotBlank(json)){
+				
+				//将json转换成java对象
+				TbItem item = JsonUtils.jsonToPojo(json, TbItem.class);
+				return item;
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		TbItem item = itemMapper.selectByPrimaryKey(itemId);
+		
+		
+		//如果没有，到数据库查询，将查询结果添加到redis中
+		//添加缓存不能影响正常的业务逻辑
+		try {
+			//向redis中添加缓存
+			jedisClient.set(REDIS_ITEM_KEY+":"+ITEM_BASE_INFO_KEY+":"+itemId, JsonUtils.objectToJson(item));
+			
+			//设置key的过期时间
+			jedisClient.expire(REDIS_ITEM_KEY+":"+ITEM_BASE_INFO_KEY+":"+itemId, ITEM_EXPIRE_SECOND);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return item;
+	}
+
+	/**
+	 * 根据商品id查询商品描述
+	 */
+	@Override
+	public TbItemDesc getItemDescById(Long itemId) {
+		
+		//查询缓存,如果命中，直接返回
+		String json = jedisClient.get(REDIS_ITEM_KEY+":"+ITEM_DESC_KEY+":"+itemId);
+		
+		
+		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+		return itemDesc;
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.taotao.rest.service.impl;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.rest.service.IndexService;
+
+@Service
+public final class IndexServiceImpl implements IndexService {
+
+	@Autowired
+	private SolrServer solrServer;
+	
+	@Override
+	public TaotaoResult syncIndex(Long id) {
+		
+		return null;
+	}
+
+}

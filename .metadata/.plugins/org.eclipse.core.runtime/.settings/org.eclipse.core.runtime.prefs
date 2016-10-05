@@ -1,0 +1,4 @@
+content-types/org.eclipse.core.runtime.text/charset=UTF-8
+content-types/org.eclipse.core.runtime.text/file-extensions=propertites
+eclipse.preferences.version=1
+line.separator=\r\n

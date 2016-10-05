@@ -1,0 +1,14 @@
+#图片服务器的基础url
+IMAGE_SERVER_BASE_URL=http://192.168.233.128/
+
+#服务层基础url
+REST_BASE_URL=http://localhost:8081/rest
+
+#内容缓存同步服务url
+REST_CONTENT_SYNC_URL=/sync/content/
+
+#搜索层基础url
+SEARCH_BASE_URL=http://localhot:8083/search
+
+#索引同步服务url
+SEARCH_INDEX_SYNC_URL=/sync/index

@@ -1,0 +1,15 @@
+package com.taotao.rest.service;
+
+import java.io.IOException;
+
+import org.apache.solr.client.solrj.SolrServerException;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.rest.pojo.SearchItem;
+
+public interface SycnIndexService {
+
+	//同步索引
+	public TaotaoResult syncIndex(SearchItem searchItem) throws SolrServerException, IOException;
+	
+}

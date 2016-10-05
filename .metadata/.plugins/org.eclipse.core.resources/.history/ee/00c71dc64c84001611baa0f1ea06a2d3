@@ -1,0 +1,15 @@
+package com.taotao.portal.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 实现商品查询
+ * @author jessyon
+ *
+ */
+@Controller
+public class SearchController {
+
+	
+	
+}

@@ -1,0 +1,13 @@
+package com.taotao.portal.controller;
+
+/**
+ * 实现商品查询
+ * @author jessyon
+ *
+ */
+@Controller
+public class SearchController {
+
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.taotao.rest.pojo;
+
+public class ItemCatResult {
+
+	private List data;
+	
+	
+	
+}

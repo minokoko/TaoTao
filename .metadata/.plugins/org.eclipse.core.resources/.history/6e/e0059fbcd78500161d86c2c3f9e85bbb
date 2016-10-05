@@ -1,0 +1,10 @@
+package com.taotao.rest.service;
+
+import com.taotao.common.pojo.TaotaoResult;
+
+public interface IndexService {
+
+	//同步索引
+	public TaotaoResult syncIndex(Long id);
+	
+}

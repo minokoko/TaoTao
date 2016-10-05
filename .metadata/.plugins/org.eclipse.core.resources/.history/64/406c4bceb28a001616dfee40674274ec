@@ -1,0 +1,10 @@
+package com.taotao.rest.controller;
+
+/**
+ * 商品管理controller
+ * @author jessyon
+ *
+ */
+public class ItemController {
+
+}

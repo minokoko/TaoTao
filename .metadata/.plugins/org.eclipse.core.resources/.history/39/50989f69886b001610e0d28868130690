@@ -1,0 +1,11 @@
+package com.taotao.rest.controller;
+
+/**
+ * 商品分类查询服务Controller
+ * @author jessyon
+ *
+ */
+
+public class ItemCatController {
+
+}

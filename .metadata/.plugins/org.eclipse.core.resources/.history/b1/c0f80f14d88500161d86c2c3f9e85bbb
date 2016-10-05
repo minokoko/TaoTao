@@ -1,0 +1,46 @@
+package com.taotao.rest.service.impl;
+
+import java.io.IOException;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.impl.CloudSolrServer;
+import org.apache.solr.common.SolrInputDocument;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.rest.service.IndexService;
+
+@Service
+public final class IndexServiceImpl implements IndexService {
+
+	@Autowired
+	private SolrServer solrServer;
+	
+	@Value("${SOLR_CLOUD_SERVER_URL}")
+	private String SOLR_CLOUD_SERVER_URL;
+	
+	@Override
+	public TaotaoResult syncIndex(Long id) throws SolrServerException, IOException {
+		
+		//创建一个SolrServer对象
+				CloudSolrServer solrServer = new CloudSolrServer("115.159.93.201:2181,115.159.93.201:2182,115.159.93.201:2183");
+				//设置默认的collection
+				solrServer.setDefaultCollection("collection2");
+				
+				//创建一个文档对象
+				SolrInputDocument document = new SolrInputDocument();
+				document.addField("id", "test01");
+				document.addField("item_title", "jessyon");
+				
+				//添加文档
+				solrServer.add(document);
+				
+				//提交
+				solrServer.commit();
+				return null;
+	}
+
+}

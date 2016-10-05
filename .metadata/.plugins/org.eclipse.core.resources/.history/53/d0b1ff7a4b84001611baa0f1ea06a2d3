@@ -1,0 +1,32 @@
+package com.taotao.portal.service.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.portal.pojo.SearchResult;
+import com.taotao.portal.service.SearchService;
+
+/**
+ * 搜索服务实现
+ * @author jessyon
+ *
+ */
+@Service
+public class SearchServiceImpl implements SearchService {
+
+	
+	
+	@Override
+	public SearchResult search(String keyword, int page, int rows) {
+	    //调用服务查询商品列表
+		Map<String,String> param = new HashMap<>();
+		param.put("keyword", keyword);
+		param.put("page", page);
+		param.put("rows", value);
+		HttpClientUtil.doGet(url);
+		
+		return null;
+	}
+
+}

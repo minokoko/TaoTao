@@ -1,0 +1,22 @@
+package com.taotao.portal.service.impl;
+
+import com.taotao.portal.pojo.SearchResult;
+import com.taotao.portal.service.SearchService;
+
+/**
+ * 搜索服务实现
+ * @author jessyon
+ *
+ */
+@Service
+public class SearchServiceImpl implements SearchService {
+
+	
+	
+	@Override
+	public SearchResult search(String keyword, int page, int rows) {
+	    //调用服务查询商品列表
+		return null;
+	}
+
+}

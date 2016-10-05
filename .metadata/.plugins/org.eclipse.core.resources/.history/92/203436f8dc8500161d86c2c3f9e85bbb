@@ -1,0 +1,65 @@
+package com.taotao.search.service.impl;
+
+import java.io.IOException;
+
+import org.apache.solr.client.solrj.SolrServer;
+import org.apache.solr.client.solrj.SolrServerException;
+import org.apache.solr.client.solrj.impl.CloudSolrServer;
+import org.apache.solr.common.SolrInputDocument;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.rest.mapper.ItemMapper;
+import com.taotao.rest.pojo.SearchItem;
+import com.taotao.search.service.SycnIndexService;
+
+/**
+ * 同步索引
+ * @author jessyon
+ *
+ */
+@Service
+public final class SycnIndexServiceImpl implements SycnIndexService {
+
+	@Autowired
+	private SolrServer solrServer;
+	
+	@Autowired
+	private ItemMapper itemMapper;
+
+	@Value("${SOLR_CLOUD_SERVER_URL}")
+	private String SOLR_CLOUD_SERVER_URL;
+
+	@Value("${SOLR_CLOUD_SERVER_DEFAULTCOLLECTION}")
+	private String SOLR_CLOUD_SERVER_DEFAULTCOLLECTION;
+
+	@Override
+	public TaotaoResult syncIndex(Long cid) throws SolrServerException, IOException {
+
+		// 创建一个SolrServer对象
+		CloudSolrServer solrServer = new CloudSolrServer(SOLR_CLOUD_SERVER_URL);
+		// 设置默认的collection
+		solrServer.setDefaultCollection(SOLR_CLOUD_SERVER_DEFAULTCOLLECTION);
+
+		// 创建一个文档对象
+		SolrInputDocument document = new SolrInputDocument();
+
+		document.addField("id", item.getId());
+		document.addField("item_title", item.getTitle());
+		document.addField("item_sell_point", item.getSell_point());
+		document.addField("item_price", item.getPrice());
+		document.addField("item_image", item.getImage());
+		document.addField("item_category_name", item.getCategory_name());
+		document.addField("item_desc", item.getItem_desc());
+
+		// 添加文档
+		solrServer.add(document);
+
+		// 提交
+		solrServer.commit();
+		return TaotaoResult.ok();
+	}
+
+}

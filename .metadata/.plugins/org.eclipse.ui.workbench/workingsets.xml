@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1474860647432_3" label="TaoTao" name="TaoTao">
+<item elementID="=taotao-manager-pojo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=taotao-rest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-parent" type="4"/>
+<item elementID="=taotao-common" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager" type="4"/>
+<item elementID="=taotao-manager-service" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=taotao-search" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taotao-manager-dao" type="4"/>
+<item elementID="=taotao-manager-dao" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=taotao-portal" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=taotao-manager-web" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1471486173604_0" label="Window Working Set" name="Aggregate for window 1471486173603"/>
+<mruList name="TaoTao"/>
+</workingSetManager>
