@@ -10,6 +10,7 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.ExceptionUtil;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
+import com.taotao.pojo.TbItemParamItem;
 import com.taotao.rest.service.ItemService;
 
 /**
@@ -44,6 +45,11 @@ public class ItemController {
 		}
 	}
 	
+	/**
+	 * 查询商品描述
+	 * @param itemId
+	 * @return
+	 */
 	@RequestMapping("/desc/{itemId}")
 	@ResponseBody
 	public TaotaoResult getItemDescById(@PathVariable Long itemId){
@@ -58,5 +64,24 @@ public class ItemController {
 		}
 	}
 
+	
+	/**
+	 * 查询商品规格参数
+	 * @param itemId
+	 * @return
+	 */
+	@RequestMapping("/param/{itemId}")
+	@ResponseBody
+	public TaotaoResult getItemParamItemById(@PathVariable Long itemId){
+		try {
+			
+			TbItemParamItem itemParamItem = itemService.getItemParamById(itemId);
+			return TaotaoResult.ok(itemParamItem);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return TaotaoResult.build(500, ExceptionUtil.getStackTrace(e));
+		}
+	}
 	
 }
