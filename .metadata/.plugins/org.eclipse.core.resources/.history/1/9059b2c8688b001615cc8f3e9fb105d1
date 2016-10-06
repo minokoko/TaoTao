@@ -1,0 +1,13 @@
+#服务层基础url
+REST_BASE_URL=http://localhost:8081/rest
+#商品基本信息查询url
+REST_ITEM_BASE_URL=/item/base/
+#商品描述URL
+REST_ITEM_DESC_URL=/item/desc/
+#内容查询url
+REST_CONTENT_URL=/content/
+#取大广告位内容的cid
+REST_CONTENT_AD1_CID=89
+
+#查询服务URL
+SEARCH_BASE_URL=http://localhost:8083/search/q

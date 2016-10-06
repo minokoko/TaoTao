@@ -1,0 +1,19 @@
+package com.taotao.freemarker;
+
+import java.io.File;
+
+import freemarker.template.Configuration;
+
+public class FreeMarkerTest {
+
+	public void testFreeMarker() throws Exception{
+		
+		Configuration configuration =new Configuration(Configuration.getVersion());
+		
+		configuration.setDirectoryForTemplateLoading(new File("C:\\Users\\jessyon\\TaoTao\\taotao-portal\\src\\main\\webapp\\WEB-INF\\ftl"));
+		
+		configuration.setDefaultEncoding("utf-8");
+		
+	}
+	
+}

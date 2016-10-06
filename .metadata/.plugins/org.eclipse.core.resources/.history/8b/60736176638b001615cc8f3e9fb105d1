@@ -1,0 +1,61 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.common.utils.HttpClientUtil;
+import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemDesc;
+import com.taotao.portal.pojo.PortalItem;
+import com.taotao.portal.service.ItemService;
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Value("${REST_BASE_URL}")
+	private String REST_BASE_URL;
+	
+	@Value("${REST_ITEM_BASE_URL}")
+	private String REST_ITEM_BASE_URL;
+	
+	@Value("${REST_ITEM_DESC_URL}")
+	private String REST_ITEM_DESC_URL;
+	
+	/**
+	 * 根据商品Id查询商品基本信息
+	 */
+	@Override
+	public TbItem getItemById(Long itemId) {
+		
+		//根据商品id查询商品基本信息
+		String json = HttpClientUtil.doGet(REST_BASE_URL+REST_ITEM_BASE_URL+itemId);
+		
+		//将json数据类型转换成java对象
+		TaotaoResult taotaoResult = TaotaoResult.formatToPojo(json, PortalItem.class);
+		
+		//取商品对象
+		TbItem item =(TbItem) taotaoResult.getData();
+		
+		return item;
+	}
+	/**
+	 * 根据商品ID调用taotao-rest服务获得商品描述
+	 */
+	
+	
+	@Override
+	public String getItemDescById(Long itemId) {
+		
+		String json = HttpClientUtil.doGet(REST_BASE_URL+REST_ITEM_DESC_URL+itemId);
+		
+		//将json数据转换成java对象
+		TaotaoResult taotaoResult = TaotaoResult.formatToPojo(json, TbItemDesc.class);
+		
+		//取商品描述
+		
+		
+		return null;
+	}
+
+}

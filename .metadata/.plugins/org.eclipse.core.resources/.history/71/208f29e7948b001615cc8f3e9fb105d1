@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>${title}</title>
+	</head>
+	
+	<body>
+		
+		<label>学号:</label>${student.id}
+		<label>学号:</label>${student.id}
+		<label>学号:</label>${student.id}
+		
+	</body>
+</html>

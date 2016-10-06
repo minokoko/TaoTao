@@ -1,0 +1,90 @@
+package com.taotao.freemarker;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Test;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
+
+public class FreeMarkerTest {
+	
+	public class Student{
+		
+		private String id;
+		private String name;
+		private String address;
+		
+		
+		public Student(String id, String name, String address) {
+			super();
+			this.id = id;
+			this.name = name;
+			this.address = address;
+		}
+		
+		
+		
+		public Student() {
+			super();
+		}
+
+
+		public String getId() {
+			return id;
+		}
+		public void setId(String id) {
+			this.id = id;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getAddress() {
+			return address;
+		}
+		public void setAddress(String address) {
+			this.address = address;
+		}
+		
+		
+	}
+
+	@Test
+	public void testFreeMarker() throws Exception{
+		
+		Configuration configuration =new Configuration(Configuration.getVersion());
+		
+		configuration.setDirectoryForTemplateLoading(new File("C:\\Users\\jessyon\\TaoTao\\taotao-portal\\src\\main\\webapp\\WEB-INF\\ftl"));
+		
+		configuration.setDefaultEncoding("utf-8");
+		
+		Template template = configuration.getTemplate("second.ftl");
+		
+		Map root = new HashMap<>();
+		
+		root.put("title", "hello freemarker");
+		root.put("student", new Student("1","jessyon","成都"));
+		
+		List<Student> students = new ArrayList<Student>();
+		students.add( new Student("2","jessyon2","成都2"))
+		
+		
+		Writer out = new FileWriter(new File("F:\\HTML\\second.html"));
+		
+		template.process(root, out);
+		
+		out.flush();
+		out.close();
+		
+	}
+	
+}

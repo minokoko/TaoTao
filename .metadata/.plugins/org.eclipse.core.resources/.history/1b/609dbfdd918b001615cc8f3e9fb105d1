@@ -1,0 +1,13 @@
+package com.taotao.freemarker;
+
+import freemarker.template.Configuration;
+
+public class FreeMarkerTest {
+
+	public void testFreeMarker() throws Exception{
+		
+		Configuration configuration =new Configuration(Configuration.getVersion());
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+package com.taotao.portal.controller;
+
+/**
+ * 商品基本信息查询controller
+ * @author jessyon
+ *
+ */
+@Controller
+public class ItemController {
+
+	@Autowired
+	private ItemService itemService;
+	
+}
